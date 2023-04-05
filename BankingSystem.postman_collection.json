@@ -1,0 +1,864 @@
+{
+	"info": {
+		"_postman_id": "5c379bb2-9d4b-466a-9b39-4a3e720a4b9b",
+		"name": "BankingSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUser_Valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/djohn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"djohn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser_InValid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/djohnsss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"djohnsss"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserAccounts_Valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUserAccounts_Valid",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/Accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"Accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 22:10:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"accountId\": 100001,\n        \"userId\": 1,\n        \"accountNumber\": 1000000001,\n        \"accountType\": 1,\n        \"createdOn\": \"2023-04-04T22:02:32.1060411Z\",\n        \"currentBalance\": 12000,\n        \"deletedOn\": \"0001-01-01T00:00:00\"\n    }\n]"
+				},
+				{
+					"name": "GetUserAccounts_Valid_before_DeleteBankAccount_Valid_withbalanceamount_Validtransfertoaccount",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/Accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"Accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 23:47:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"accountId\": 100003,\n        \"userId\": 1,\n        \"accountNumber\": 1000000003,\n        \"accountType\": 1,\n        \"createdOn\": \"2023-04-04T23:44:05.3186255Z\",\n        \"currentBalance\": 11800,\n        \"deletedOn\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"accountId\": 100004,\n        \"userId\": 1,\n        \"accountNumber\": 1000000004,\n        \"accountType\": 1,\n        \"createdOn\": \"2023-04-04T23:44:07.430445Z\",\n        \"currentBalance\": 0,\n        \"deletedOn\": \"0001-01-01T00:00:00\"\n    }\n]"
+				},
+				{
+					"name": "GetUserAccounts_Valid_after_DeleteBankAccount_Valid_withbalanceamount_Validtransfertoaccount",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/Accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"Accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 23:53:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"accountId\": 100004,\n        \"userId\": 1,\n        \"accountNumber\": 1000000004,\n        \"accountType\": 1,\n        \"createdOn\": \"2023-04-04T23:44:07.430445Z\",\n        \"currentBalance\": 11800,\n        \"deletedOn\": \"0001-01-01T00:00:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetUserAccounts_InValid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/3/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"3",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewBankAccount_Valid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts?accountType=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts"
+					],
+					"query": [
+						{
+							"key": "accountType",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBankAccount_Valid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBankAccount_Invalid_withbalanceamount",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteBankAccount_Invalid_withbalanceamount",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100003"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 23:50:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "4"
+				}
+			]
+		},
+		{
+			"name": "DeleteBankAccount_Invalid_withbalanceamount_invalidtransfertoaccount",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003?transferToAccountId=1000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100003"
+					],
+					"query": [
+						{
+							"key": "transferToAccountId",
+							"value": "1000001"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteBankAccount_Invalid_withbalanceamount_invalidtransfertoaccount",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003?transferToAccountId=1000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100003"
+							],
+							"query": [
+								{
+									"key": "transferToAccountId",
+									"value": "1000001"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 23:50:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "4"
+				}
+			]
+		},
+		{
+			"name": "DeleteBankAccount_Valid_withbalanceamount_Validtransfertoaccount",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003?transferToAccountId=100004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100003"
+					],
+					"query": [
+						{
+							"key": "transferToAccountId",
+							"value": "100004"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteBankAccount_Valid_withbalanceamount_Validtransfertoaccount",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100003?transferToAccountId=100004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100003"
+							],
+							"query": [
+								{
+									"key": "transferToAccountId",
+									"value": "100004"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 23:52:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "DepositBalance_Valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100001",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WithdrawBalance_Valid_200_frommorethan300balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/withdraw?withdrawAmount=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100001",
+						"withdraw"
+					],
+					"query": [
+						{
+							"key": "withdrawAmount",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "WithdrawBalance_Valid_200_frommorethan300balance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/withdraw?withdrawAmount=200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100001",
+								"withdraw"
+							],
+							"query": [
+								{
+									"key": "withdrawAmount",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 22:15:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "2"
+				}
+			]
+		},
+		{
+			"name": "DepositBalance_Valid_Border_10000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100001",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "depositAmount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DepositBalance_Valid_Border_10000",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=10000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100001",
+								"deposit"
+							],
+							"query": [
+								{
+									"key": "depositAmount",
+									"value": "10000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 22:10:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "4"
+				}
+			]
+		},
+		{
+			"name": "DepositBalance_Invalid_zeroamount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100001",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "depositAmount",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DepositBalance_Invalid_zeroamount",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100001",
+								"deposit"
+							],
+							"query": [
+								{
+									"key": "depositAmount",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 22:08:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "DepositBalance_Invalid_10001amount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=10001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100001",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "depositAmount",
+							"value": "10001"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DepositBalance_Invalid_10001amount",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100001/deposit?depositAmount=10001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4499",
+							"path": [
+								"BankingSystemTest",
+								"1",
+								"accounts",
+								"100001",
+								"deposit"
+							],
+							"query": [
+								{
+									"key": "depositAmount",
+									"value": "10001"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Apr 2023 22:09:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "DeleteBankAccount_Invalid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4499/BankingSystemTest/1/accounts/100002232",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4499",
+					"path": [
+						"BankingSystemTest",
+						"1",
+						"accounts",
+						"100002232"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

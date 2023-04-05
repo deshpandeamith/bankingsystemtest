@@ -1,13 +1,16 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystem", "BankingSystem\BankingSystem.csproj", "{DD3E385C-71B0-4B63-985C-99F483C8D85E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystemModeling", "BankingSystemModeling\BankingSystemModeling.csproj", "{4467D876-4D4D-463C-AC89-1C5ACEC70126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{0F91A975-E506-4864-9F7C-E066B2344D6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystemModelingUnitTesting", "BankingSystemModelingUnitTesting\BankingSystemModelingUnitTesting.csproj", "{04DF81BD-1A1F-47D3-A7A2-5D51FA463B24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteDemo", "SQLiteDemo\SQLiteDemo.csproj", "{02374666-F330-4D2D-AADD-B9BC1710132E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6EE721B9-404C-4470-B41E-5E3AD9BCE4E6}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +18,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD3E385C-71B0-4B63-985C-99F483C8D85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD3E385C-71B0-4B63-985C-99F483C8D85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD3E385C-71B0-4B63-985C-99F483C8D85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD3E385C-71B0-4B63-985C-99F483C8D85E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F91A975-E506-4864-9F7C-E066B2344D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F91A975-E506-4864-9F7C-E066B2344D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F91A975-E506-4864-9F7C-E066B2344D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F91A975-E506-4864-9F7C-E066B2344D6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02374666-F330-4D2D-AADD-B9BC1710132E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02374666-F330-4D2D-AADD-B9BC1710132E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02374666-F330-4D2D-AADD-B9BC1710132E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02374666-F330-4D2D-AADD-B9BC1710132E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC155726-8B82-46BF-9D52-25353BB44B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC155726-8B82-46BF-9D52-25353BB44B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC155726-8B82-46BF-9D52-25353BB44B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC155726-8B82-46BF-9D52-25353BB44B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A57789-FE36-4CDA-A1FC-72C4FC81D448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A57789-FE36-4CDA-A1FC-72C4FC81D448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A57789-FE36-4CDA-A1FC-72C4FC81D448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A57789-FE36-4CDA-A1FC-72C4FC81D448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4467D876-4D4D-463C-AC89-1C5ACEC70126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4467D876-4D4D-463C-AC89-1C5ACEC70126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4467D876-4D4D-463C-AC89-1C5ACEC70126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4467D876-4D4D-463C-AC89-1C5ACEC70126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04DF81BD-1A1F-47D3-A7A2-5D51FA463B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DF81BD-1A1F-47D3-A7A2-5D51FA463B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DF81BD-1A1F-47D3-A7A2-5D51FA463B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DF81BD-1A1F-47D3-A7A2-5D51FA463B24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
